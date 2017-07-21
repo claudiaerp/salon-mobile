@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "name": "Delia's Place",
+    "price": 5.99,
+    "description": "Eine 1a Pizza - ohne Fleisch, okay - aber es gibt Menschen, die das mögen."
+}, {
+    "id": 2,
+    "name": "Valeria Salon y Spa",
+    "price": 10.99,
+    "description": "Mit herzhafter Eselsalami, aus ökologischem Anbau und nur künstlichen Aromen!"
+}, {
+    "id": 3,
+    "name": "Secret Beauty Salon",
+    "price": 7.99,
+    "description": "Lecker Fisch! Delfine im Netz -> Das macht uns nix! Ahoi, Seemänner."
+}, {
+    "id": 4,
+    "name": "Fargas Salon",
+    "price": 0,
+    "description": "Das Sahnestück in unserem Angebot und das vollkommen GRATIS, GRATIS, GRATIS und auch kostenlos!"
+}]

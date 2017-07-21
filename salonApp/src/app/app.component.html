@@ -1,0 +1,24 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item (click)="openPage('SalonPage')">
+        <ion-icon name="pricetags"></ion-icon>
+        Salones
+      </button>
+      <button menuClose ion-item (click)="openAboutModal()">
+        <ion-icon name="people"></ion-icon>
+        Acerca de
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false">
+</ion-nav>

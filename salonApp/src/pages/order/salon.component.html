@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Salon App</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar>
+    <ion-searchbar
+      [(ngModel)]="search"
+    >
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="order">
+  <div [hidden]="!loading" text-center padding>
+    <ion-spinner></ion-spinner>
+  </div>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingText="Actualizando..."
+    >
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item-group [hidden]="loading">
+      <a ion-item (click)="openSalon(salon.id)" *ngFor="let salon of salons | salonSearch:search">
+          <span item-left text-left>{{salon.id}}</span>
+          <h2>{{salon.name}}</h2><p>{{salon.price | currency:'USD'}}</p>
+      </a>
+    </ion-item-group>
+  </ion-list>
+</ion-content>
